@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+/* 
+npx @tailwindcss/cli -i ./styles/styles.css -o ./src/output.css --watch
+*/
+
