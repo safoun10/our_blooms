@@ -1,5 +1,4 @@
 /*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -7,19 +6,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-100: oklch(96.2% 0.059 95.617);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
-    --text-8xl: 6rem;
-    --text-8xl--line-height: 1;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -172,76 +158,119 @@
     display: none !important;
   }
 }
-@layer utilities {
-  .flex {
-    display: flex;
-  }
-  .table {
-    display: table;
-  }
-  .flex-1 {
-    flex: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .bg-amber-100 {
-    background-color: var(--color-amber-100);
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
-  .text-8xl {
-    font-size: var(--text-8xl);
-    line-height: var(--tw-leading, var(--text-8xl--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
+@layer utilities;
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Outfit:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+:root {
+  --color_black: #2c2825;
+  --color_yellow: #ffc800;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
+.font_fancy {
+  font-family: "Caprasimo", serif;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
-    }
+html {
+  scroll-behavior: smooth;
+  color: var(--color_black);
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: "Outfit", sans-serif;
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+nav {
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--color_black);
+  background-color: white;
+  z-index: 100;
+}
+.main_logo {
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+}
+.nav_links {
+  display: flex;
+  gap: 30px;
+  font-weight: 600;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.hero_text {
+  font-size: 10rem;
+}
+.hero_img {
+  object-fit: contain;
+}
+.who {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+.title {
+  font-size: 2rem;
+  max-width: 60%;
+  text-align: center;
+  font-weight: 600;
+  line-height: 2rem;
+  margin: 40px 0;
+}
+.sub_title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #505050;
+}
+.about_us {
+  background-color: var(--color_yellow);
+  max-width: fit-content;
+  padding: 5px 10px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+.gallery_flow {
+  margin: 100px 0;
+  overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+.each_flow {
+  max-height: 300px;
+  width: auto;
+  margin: 0 10px;
+  border-radius: 2rem;
+  object-fit: cover;
+  animation: scroll-with-page linear;
+  animation-timeline: scroll(root);
+}
+@keyframes scroll-with-page {
+  from {
+    transform: translateX(-250%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
