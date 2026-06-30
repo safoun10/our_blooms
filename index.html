@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/output.css" rel="stylesheet">
-    <link href="./styles/styles.css" rel="stylesheet">
+    <link href="/src/output.css" rel="stylesheet">
+    <link href="/styles/styles.css" rel="stylesheet">
     <title>Our Blooms</title>
 </head>
 
 <body>
 
-    <nav>
-        <div class="main_logo font_fancy">Our Blooms®</div>
-        <div class="nav_links">
+    <nav class="sticky top-0 bg-white z-[100] flex justify-between items-center py-5 border-b-2 border-brand-black">
+        <div class="main_logo font_fancy text-[1.5rem] tracking-[-1px]">Our Blooms®</div>
+        <div class="nav_links flex gap-[30px] font-semibold">
             <div>
                 <a href="#">GALLERY</a>
             </div>
@@ -25,38 +25,103 @@
             </div>
         </div>
     </nav>
-
-    <div class="hero">
-        <div class="hero_text font_fancy">Our Blooms<sup>®</sup></div>
-        <img src=".//resources/Image.png" alt="" class="hero_img">
+    <div class="hero flex flex-col justify-center items-center max-w-full">
+        <div class="hero_text font_fancy text-[10rem]">Our Blooms<sup>®</sup></div>
+        <img src="./resources/Image.png" alt="" class="hero_img object-contain">
     </div>
+
+    <div class="who my-[100px] flex flex-col justify-center items-center max-w-full">
+        <div class="sub_title text-[14px] font-semibold text-[#505050]">
+            WHO WE ARE
+        </div>
+        <div class="title text-[2rem] max-w-[60%] text-center font-semibold leading-[2rem] my-[40px]">
+            We're Our Blooms® and we're here to help you find your floral story.
+        </div>
+        <div class="about_us bg-brand-yellow max-w-fit px-[10px] py-[5px] font-extrabold text-[0.8rem] rounded-[5px]">
+            ● &ensp; ABOUT &nbsp; US
+        </div>
+    </div>
+
+    <div class="gallery_flow my-[100px] overflow-hidden max-w-full flex w-max gap-5">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+        <img class="each_flow h-[300px] w-[300px] rounded-[2rem] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+            src="./resources/Image (2).png" alt="Floral Arrangement">
+    </div>
+
+    <div class="what">
+        <div class="what_actually">
+            <div class="what_title">WHAT WE DO</div>
+            <div class="what_sub">
+                We bring a touch of that simple magic into your world.
+            </div>
+        </div>
+        <div class="steps">
+            <div class="each_what">
+                <div>
+                    <img class="each_what_img" src="./resources/Image (6).png" alt="">
+                </div>
+                <div>
+                    <div class="sub_photo">FLORAL INSTALLATIONS</div>
+                </div>
+            </div>
+            <div class="each_what">
+                <div>
+                    <img class="each_what_img" src="./resources/Image (8).png" alt="">
+                </div>
+                <div>
+                    <div class="sub_photo">NATIVE PLANT ARRANGEMENTS</div>
+                </div>
+            </div>
+            <div class="each_what">
+                <div>
+                    <img class="each_what_img" src="./resources/Image (3).png" alt="">
+                </div>
+                <div>
+                    <div class="sub_photo">CUSTOM FLORAL CONCEPTS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax"></div>
 
     <div class="who">
         <div class="sub_title">
-            WHO WE ARE
+            WORK WITH US
         </div>
         <div class="title">
-            We're Our Blooms® and we're here to help you find your floral story.
+            Discover how we can add a touch of natural beauty to your next event.
         </div>
         <div class="about_us">
             ● &ensp; ABOUT &nbsp; US
         </div>
     </div>
 
-    <div class="gallery_flow">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
-        <img class="each_flow" src="./resources/Image (1).png" alt="">
+    <div class="footer">
+        <img class="footer_img" src="./resources/blue_flower.png">
     </div>
 
 </body>
